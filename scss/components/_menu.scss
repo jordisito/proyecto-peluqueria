@@ -1,0 +1,36 @@
+.HeaderMain {
+    &-nav {
+        background-color: $color3;
+        position: fixed;
+        top: 0;
+        right: -$offCanvas;
+        width: $offCanvas;
+        min-height: 100vh;
+        padding: 1rem;
+        z-index: 200;
+        transition: all .3s;
+        &.mostrar {
+            right: 0;
+        }
+    }
+    &-item {
+        border-bottom: thin solid rgba($black, .2);
+    }
+    &-link {
+        display: block;
+        line-height: 2.7;
+        text-transform: uppercase;
+        font-weight: $light;
+        font-family: $fontTitle;
+    }
+}
+
+// mover el body al mostrar el menu 
+body {
+    position: relative;
+    right: 0;
+    transition: all .3s;
+    &.mostrar {
+        right: $offCanvas;
+    }
+}

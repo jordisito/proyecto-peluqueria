@@ -1,0 +1,47 @@
+.Banner {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        opacity: .5;
+    }
+    &-img {
+        display: block;
+        width: 100%;
+    }
+    &-copy {
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+        color: $white;
+    }
+    &-title {
+        font-size: 1.4rem;
+        @include desde($large) {
+            font-size: 3rem;
+        }
+    }
+    &-content {
+        @include desde($large) {
+            font-size: 1.5rem;
+            font-weight: $light;
+        }
+    }
+    &-button {
+        font-size: .8rem;
+        @include desde($large) {
+            font-size: 1rem;
+        }
+    }
+}

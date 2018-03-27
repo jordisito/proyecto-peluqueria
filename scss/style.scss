@@ -1,0 +1,45 @@
+// paleta de colores
+$color1: #514077;
+$color2: #924992;
+$color3: #FFAD01;
+$black: #111;
+$white: #fff;
+// tipografias
+// oswald para titulos
+// lato para textos
+$fontTitle: 'Oswald',
+sans-serif;
+$fontText: 'Lato',
+sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Oswald:300,400');
+// tamaño de fuentes
+$light: 300;
+$normal: 400;
+// layout
+$max-width: 1200px;
+// off-canvas
+$offCanvas: 15rem;
+// breakpoints
+$small: 480px;
+$medium: 768px;
+$large: 1025px;
+$x-large: 1400px;
+// mixin para mediaqueries
+@mixin desde ($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+// componentes
+// base quiere decir solo las etiquetas
+@import './components/base';
+@import './components/header';
+@import './components/menu';
+@import './components/banner';
+@import './components/button';
+@import './components/services';
+@import './components/staff';
+@import './components/modules';
+@import './components/contact';
+@import './components/footer';

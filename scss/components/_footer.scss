@@ -1,0 +1,16 @@
+.Footer {
+    background-color: $color1;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.social-icon {
+    font-size: 1.4rem;
+    color: white;
+    display: inline-block;
+    margin: 0 .3rem;
+    opacity: .5;
+    &:hover {
+        opacity: 1;
+    }
+}

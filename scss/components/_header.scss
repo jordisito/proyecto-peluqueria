@@ -1,0 +1,24 @@
+.HeaderMain {
+    background-color: $color1;
+    &-logo {
+        /*width: 50%;*/
+        width: 150px;
+    }
+    &-raiz {
+        display: inline-block;
+    }
+}
+
+.l-container {
+    width: $max-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-menu {
+    font-size: 1.8rem;
+    color: $white;
+    cursor: pointer;
+    z-index: 1000;
+}

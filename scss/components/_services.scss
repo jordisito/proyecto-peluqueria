@@ -1,0 +1,25 @@
+.Services {
+    @include desde($medium) {
+        display: flex;
+    }
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color1;
+        height: 10rem;
+        color: $white;
+        @include desde($medium) {
+            flex: 1;
+        }
+        @include desde($large) {
+            height: 15rem;
+        }
+        &:nth-of-type(2) {
+            background-color: $color2;
+        }
+        &:nth-of-type(3) {
+            background-color: $color3;
+        }
+    }
+}

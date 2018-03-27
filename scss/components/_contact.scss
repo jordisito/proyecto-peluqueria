@@ -1,0 +1,56 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    @include desde($large) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &-title {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    &-data {
+        width: 100%;
+        font-size: .85rem;
+        @include desde($large) {
+            margin-right: 1.5rem;
+        }
+    }
+    &-form {
+        padding-top: .5rem;
+    }
+    &-phone,
+    &-address {
+        opacity: .8;
+        color: $color2;
+        &::before {
+            margin-right: .3rem;
+            position: relative;
+            top: 2px;
+        }
+    }
+    &-form-container {
+        margin-top: 1rem;
+        width: 100%;
+        input,
+        textarea {
+            width: 100%;
+            line-height: 1.7;
+            border: thin solid rgba($black, .25);
+            margin-bottom: .8rem;
+        }
+        label {
+            font-size: .8rem;
+            opacity: .6;
+        }
+        [type="submit"] {
+            width: auto;
+            line-height: 3;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-left: 0;
+        }
+    }
+}
